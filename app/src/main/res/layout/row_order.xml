@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="100dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/img_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_home"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"/>
+    <RelativeLayout
+        android:id="@+id/rl_product_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_product">
+    <TextView
+        android:id="@+id/txt_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Licel 20 ml"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/txt_product_availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Availability : 100"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txt_product_name"
+        android:textSize="20sp"/>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/edt_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:hint="Quantity"
+        android:layout_toRightOf="@+id/rl_product_details"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:ems="5"
+        android:maxLength="5"
+        android:inputType="number"
+        android:background="@android:drawable/editbox_background"/>
+    <Spinner
+        android:id="@+id/spReasons"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/States"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/edt_quantity"
+        android:layout_centerVertical="true"
+        />
+    <EditText
+        android:id="@+id/edt_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Remark"
+        android:layout_toRightOf="@+id/spReasons"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:maxLines="2"
+        android:ems="50"
+        android:maxLength="50"
+        android:background="@android:drawable/editbox_background"
+        android:gravity="left"/>
+</RelativeLayout>

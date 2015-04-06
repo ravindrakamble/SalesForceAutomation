@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.r2apps.sfa.fragments.ProductsFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_product_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Number of products: 15"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <ImageButton
+            android:id="@+id/btn_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list"
+            android:layout_toLeftOf="@+id/btn_grid"
+            android:layout_marginRight="10dp"/>
+        <ImageButton
+            android:id="@+id/btn_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/grid"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/list_for_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_product_header"/>
+
+    <GridView
+        android:id="@+id/grid_for_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:visibility="invisible"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_below="@+id/rl_product_header"/>
+
+</RelativeLayout>

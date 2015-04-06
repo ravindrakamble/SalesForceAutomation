@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frag_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/dashboard_style"
+        android:gravity="left" >
+
+        <ImageView
+            android:id="@+id/img_profile_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_home" />
+
+        <TextView
+            android:id="@+id/cust_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_profile_logo"
+            android:text="Karen Oneytest"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_first"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_details" >
+
+            <TextView
+                android:id="@+id/txt_products"
+                style="@style/Header.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/piechart_monthly" />
+
+            <com.androidplot.pie.PieChart
+                android:id="@+id/piechart_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rl_piechart_monthly"
+                android:layout_below="@+id/txt_products"
+                android:layout_margin="10dp"
+                androidPlot.titleWidget.labelPaint.textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_piechart_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/container_background" >
+
+                <TextView
+                    android:id="@+id/txt_monthly_products_color"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/segment_2" />
+
+                <TextView
+                    android:id="@+id/txt_monthly_products_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/txt_monthly_products_color"
+                    android:text="Completed" />
+
+                <TextView
+                    android:id="@+id/txt_monthly_booking_flight_color"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/txt_monthly_products_txt"
+                    android:background="@color/segment_4" />
+
+                <TextView
+                    android:id="@+id/txt_monthly_booking_flight_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/txt_monthly_booking_flight_color"
+                    android:text="Remaining" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_details" >
+
+            <TextView
+                android:id="@+id/txt_trends"
+                style="@style/Header.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/piechart_daily" />
+
+            <com.androidplot.pie.PieChart
+                android:id="@+id/mySimplePieChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rl_piechart"
+                android:layout_below="@+id/txt_trends"
+                android:layout_margin="10dp"
+                androidPlot.titleWidget.labelPaint.textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_piechart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/container_background" >
+
+                <TextView
+                    android:id="@+id/txt_type_products_color"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/segment_2" />
+
+                <TextView
+                    android:id="@+id/txt_type_products_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/txt_type_products_color"
+                    android:text="Completed" />
+
+                <TextView
+                    android:id="@+id/txt_type_booking_flight_color"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/txt_type_products_txt"
+                    android:background="@color/segment_4" />
+
+                <TextView
+                    android:id="@+id/txt_type_booking_flight_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/txt_type_booking_flight_color"
+                    android:text="Remaining" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_details" >
+
+            <TextView
+                android:id="@+id/txt_social"
+                style="@style/Header.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top Products" />
+
+            <ListView
+                android:id="@+id/list_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_social" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_details" >
+
+            <TextView
+                android:id="@+id/txt_least_products"
+                style="@style/Header.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Least Products" />
+
+            <ListView
+                android:id="@+id/list_products_least"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_least_products" />
+
+            <TextView
+                android:id="@+id/empty_least"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/list_products_least"
+                android:text="@string/products"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/dashboard_txt"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

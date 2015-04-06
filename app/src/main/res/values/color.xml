@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_title">#ffffff</color>
+    <color name="action_bar">#2495c7</color>
+    <color name="list_background">#fff</color>
+    <color name="list_background_pressed">#A6CE39</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#ffffff</color>
+    <color name="background">#fff</color>
+
+    <color name="text_black">#ffffff</color>
+    <color name="white">#fff</color>
+    <color name="tab_bar_text">#7F7F7F</color>
+
+    <color name="black">#ff000000</color>
+    <color name="Gray50">#ffc3c3c4</color>
+    <color name="divider">#595959</color>
+    <color name="dashboard_txt">#2a4865</color>
+    <color name="container_header_background">#A6CE39</color>
+    <color name="container_background">#eef2f5</color>
+    <color name="dashboard_style">#6693c1</color>
+    <color name="segment_1">#3090C7</color>
+    <color name="segment_2">#4E9258</color>
+    <color name="segment_3">#FFA62F</color>
+    <color name="segment_4">#DC381F</color>
+    <color name="holo_header">#F58220</color>
+    <color name="green">#36A245</color>
+    <color name="ripple_material_light">#40000000</color>
+</resources>

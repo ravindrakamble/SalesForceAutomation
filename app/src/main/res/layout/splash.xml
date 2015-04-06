@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#005959" >
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_screen_login"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_header_login"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="#3e9dc7" >
+        <ImageView
+        android:id="@+id/txt_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/mpos_login_logo" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/img_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header_login"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/login_bg_arrow_down" />
+</RelativeLayout>

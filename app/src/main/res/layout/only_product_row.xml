@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/image_bg"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/list" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_toLeftOf="@+id/price"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/dashboard_txt"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="Name"/>
+
+
+    <TextView
+        android:id="@+id/sizeunit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_toLeftOf="@+id/price"
+        android:layout_below="@+id/title"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/dashboard_txt"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="20ml"/>
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:text="USD 0.99"
+         android:textColor="@color/dashboard_txt"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.r2apps.sfa.fragments.Orders"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textOrderNo"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:text="Order No. :"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textOrderNoValue"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/textOrderNo"
+        android:text="100"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textRetailers"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textOrderNo"
+        android:text="Select Retailer :"/>
+    <Spinner
+        android:id="@+id/spRetailers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/States"
+        android:textColor="@color/black"
+        android:layout_below="@+id/textRetailers"/>
+    <ListView
+        android:id="@+id/list_order_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_details"
+        android:layout_below="@+id/spRetailers" />
+</RelativeLayout>

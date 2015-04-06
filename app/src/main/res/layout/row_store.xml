@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_store_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/txt_store_open">
+
+        <TextView
+            android:id="@+id/txt_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reliance Fresh"
+            android:textColor="@color/dashboard_txt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_store_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_store_name"
+            android:layout_marginRight="10dp"
+            android:gravity="left"
+            android:text="Banashankari 3rd Stage,"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_store_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="OPEN UNTIL 11:30 PM"
+        android:textColor="@color/green"
+        android:textStyle="bold" />
+</RelativeLayout>
