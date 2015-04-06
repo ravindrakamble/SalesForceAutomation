@@ -33,8 +33,8 @@
     <array name="nav_drawer_icons">
         <item>@drawable/dashboard</item>
         <item>@drawable/distributors</item>
-        <item>@drawable/product</item>
-        <item>@drawable/retailers</item>
+        <item>@drawable/products</item>
+        <item>@drawable/retailer</item>
         <item>@drawable/start</item>
         <item>@drawable/orders</item>
         <item>@drawable/add_retailer</item>
